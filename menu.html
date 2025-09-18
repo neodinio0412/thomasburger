@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Hamburguesería</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo-link">
+            <img src="image/logo.png" alt="Logo de la Hamburguesería" class="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="menu.html" class="nav-link">Menú</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+        </nav>
+    </header>
+    <main class="main-content menu-page">
+        <h2 class="section-title">Nuestro Menú</h2>
+        <h2 class="section-title">Hamburguesas</h2>
+        <div class="menu-grid">
+            <div class="burger-item" data-name="La Clásica" data-ingredients="Carne de res, queso cheddar, lechuga, tomate y salsa especial.">
+                <img src="ejemplo_hamburguesa_1.jpg" alt="La Clásica">
+                <h3>La Clásica</h3>
+            </div>
+            <div class="burger-item" data-name="La Baconera" data-ingredients="Doble de tocino crujiente, cebolla caramelizada y salsa BBQ.">
+                <img src="image/img1.jpg" alt="La Baconera">
+                <h3>La Baconera</h3>
+            </div>
+            <div class="burger-item" data-name="La Veggie" data-ingredients="Hamburguesa de lentejas, aguacate, brotes de alfalfa y pan integral.">
+                <img src="image/img2.jpg" alt="La Veggie">
+                <h3>La Veggie</h3>
+            </div>
+            <div class="burger-item" data-name="Doble Queso" data-ingredients="Dos carnes, doble queso americano, pepinillos y kétchup.">
+                <img src="image/img3.jpg" alt="Doble Queso">
+                <h3>Doble Queso</h3>
+            </div>
+            <div class="burger-item" data-name="Picante Extrema" data-ingredients="Carne de res, jalapeños, queso pepper jack y salsa picante.">
+                <img src="ejemplo_hamburguesa_5.jpg" alt="Picante Extrema">
+                <h3>Picante Extrema</h3>
+            </div>
+            <div class="burger-item" data-name="La Ranchera" data-ingredients="Carne de res, aros de cebolla, queso fundido y salsa ranch.">
+                <img src="ejemplo_hamburguesa_6.jpg" alt="La Ranchera">
+                <h3>La Ranchera</h3>
+            </div>
+            <div class="burger-item" data-name="Hamburguesa del Chef" data-ingredients="Ingredientes secretos del chef, una explosión de sabor.">
+                <img src="image/hamburguesa_inicio.jpg" alt="Hamburguesa del Chef">
+                <h3>Hamburguesa del Chef</h3>
+                <div class="menu-grid"></div>
+            </div>
+        </div>
+        <h2 class="section-title">Salchipapa</h2>
+        <div class="menu-grid">
+            <div class="burger-item" data-name="La Clásica" data-ingredients="Carne de res, queso cheddar, lechuga, tomate y salsa especial.">
+                <img src="ejemplo_hamburguesa_1.jpg" alt="La Clásica">
+                <h3>La Clásica</h3>
+            </div>
+            <div class="burger-item" data-name="La Baconera" data-ingredients="Doble de tocino crujiente, cebolla caramelizada y salsa BBQ.">
+                <img src="image/img1.jpg" alt="La Baconera">
+                <h3>La Baconera</h3>
+            </div>
+            <div class="burger-item" data-name="La Veggie" data-ingredients="Hamburguesa de lentejas, aguacate, brotes de alfalfa y pan integral.">
+                <img src="image/img2.jpg" alt="La Veggie">
+                <h3>La Veggie</h3>
+            </div>
+            <div class="burger-item" data-name="Doble Queso" data-ingredients="Dos carnes, doble queso americano, pepinillos y kétchup.">
+                <img src="image/img3.jpg" alt="Doble Queso">
+                <h3>Doble Queso</h3>
+            </div>
+            <div class="burger-item" data-name="Picante Extrema" data-ingredients="Carne de res, jalapeños, queso pepper jack y salsa picante.">
+                <img src="ejemplo_hamburguesa_5.jpg" alt="Picante Extrema">
+                <h3>Picante Extrema</h3>
+            </div>
+            <div class="burger-item" data-name="La Ranchera" data-ingredients="Carne de res, aros de cebolla, queso fundido y salsa ranch.">
+                <img src="ejemplo_hamburguesa_6.jpg" alt="La Ranchera">
+                <h3>La Ranchera</h3>
+            </div>
+            <div class="burger-item" data-name="Hamburguesa del Chef" data-ingredients="Ingredientes secretos del chef, una explosión de sabor.">
+                <img src="image/hamburguesa_inicio.jpg" alt="Hamburguesa del Chef">
+                <h3>Hamburguesa del Chef</h3>
+            </div>
+        </div>
+        <br><br><br>
+
+    </main>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h3 id="modal-burger-name"></h3>
+            <p id="modal-burger-ingredients"></p>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Hamburguesería. Todos los derechos reservados.</p>
+        <p>Lima, Perú | Teléfono: +51 987 654 321</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
