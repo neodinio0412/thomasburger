@@ -367,6 +367,19 @@ body {
         align-items: center;
         padding: 0;
     }
+    .map-container {
+        width: 100%;
+        height: 250px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
 
 
 }
+
