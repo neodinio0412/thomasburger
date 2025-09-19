@@ -308,48 +308,57 @@ body {
     font-size: 0.9rem;
 }
 
-@media (max-width: 600px) {
-    .contact-content {
-        gap: 1rem;
-        padding: 0 0.5rem;
-        max-width: 100%;
+/* Diseño responsivo para móviles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
     }
 
-    .map-container {
-        height: 200px;
-        max-width: 100%;
+    .logo-link {
+        position: static;
+        transform: none;
     }
 
-    .map-container iframe {
-        width: 100%;
-        height: 100%;
-        border-radius: 8px;
+    .logo {
+        height: 40px;
+        margin-bottom: 0.5rem;
     }
 
-    .contacto-page .section-title {
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .contacto-page .section-subtitle {
+    .nav-link {
+        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .welcome-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome-text p {
         font-size: 1rem;
-        margin-bottom: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     .social-links {
         flex-direction: column;
-        align-items: stretch;
-        gap: 0.7rem;
+        gap: 1rem;
+        align-items: center;
         padding: 0;
-        width: 100%;
-        justify-content: center;
     }
 
-    .contact-link {
-        font-size: 0.95rem;
-        padding: 0.7rem 1rem;
-        text-align: center;
-        width: 100%;
-        box-sizing: border-box;
-    }
 }
